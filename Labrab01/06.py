@@ -1,15 +1,17 @@
 import math
-a = int(input('Введите корень a -'))
-b = int(input('Введите корень b -'))
-c = int(input('Введите корень c -'))
+a = int(input('Введите первую неизвестную - '))
+b = int(input('Введите вторую неизвестную - '))
+c = int(input('Введите третью неизвестную - '))
 
+diskr = (b ** 2) - (4 * a * c )
 if diskr > 0:
-diskr = b ** 2 - 4 * a * c
-korn_1 = (-b + math.sqrt(diskr)) / (2 * a)
-korn_2 = (-b - math.sqrt(diskr)) / (2 * a)
-print('Первый корень - ', korn_1, 'Второй корень - ', korn_2)
+  kor_1 = ( -b + math.sqrt(diskr)) / (2 * a)
+  kor_2 = ( -b - math.sqrt(diskr)) / (2 * a)
+  print ('Первый корень ', kor_1, 'Второй корень ', kor_2, sep = '\n')
+
 elif diskr == 0:
-    korn_3 = -b / (2 * a)
-    print ('Корень при дискриминанте равном 0', korn_3)
+  kor_3 = (-b) / (2 * a)
+  print('Корень при дискриминанте равном 0', kor_3)
 else:
-    print('Корней нет')
+	print('Корней нет')
+  
