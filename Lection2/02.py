@@ -1,3 +1,4 @@
+# цикл с предусловием
 pos_begin = 48; pos_end = 68
 pos = pos_begin
 while pos < pos_end + 1:
