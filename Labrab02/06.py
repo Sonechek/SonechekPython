@@ -1,3 +1,3 @@
 x = int(input())
 for i in range(x):
-    print('%s%s' % (' ' * (x-i-1), 'x' * (i*2+1)))
+    print(' ' * (x-i-1) + 'X' * (i*2+1))
