@@ -1,10 +1,10 @@
 import math
 x = int(input())
 n = int(input())
-math.sin(x) = x
+sum_1 = 0
 for i in range(n):
     if i % 2 == 0:
-        math.sin(x) += (x**(n+2)/(math.factorial(n+2))
+        sum_1 = sum_1 +(x**(n+2))/(math.factorial(n+2))
     else:
-        math.sin(x) -= (x**(n+2)/(math.factorial(n+2))
-print("%.3f"(math.sin(x))
+        sum_1 = sum_1 + (x**(n+2))/(math.factorial(n+2))
+print("%.3f" % sum_1 )
