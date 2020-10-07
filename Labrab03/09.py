@@ -1,7 +1,7 @@
 n = int(input())
-a = 1
-while a % n != 0:
-    for i in range(n):
-        print(i)
-        
-    a += 1 
+lst = []
+a = 0
+for i in range(n):
+    for i in range(n**2):
+        lst.append(i)
+print(lst)
