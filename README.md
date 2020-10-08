@@ -1,3 +1,2 @@
 # SonechekPython
-I would to share this rep in my friendly circles.	
-You're welcome!!!
+Begginer in sport-programming, didn't programming for two years
