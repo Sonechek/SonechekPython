@@ -3,4 +3,4 @@ text  = f1.read()
 
 
 
-f1.close()
+f1.close()  
