@@ -1,17 +1,33 @@
 f1 = open('/home/sanek/Рабочий стол/input.txt', 'r')
-text  = f1.read()
-line = text.split('\n')
-lines = text.split()
-lines_vt = lines[::-1]
-n = len(line)
-acc = 0
-bat = 0
-for i in range (n):
-    acc +=                      #Здесь мы будем добавлять i-ый элемент n-ой строки в аккумилирующую переменную
-    bat +=                      #А здесь мы будем добавлять i[::-1]-ый элемент n[::-1]-ой строки в акк переменную
-    i += n
+s  = f1.read()
+# line = text.split('\n')
+# lines = text.split()
+print(s)
+lst = list(map(int, s.split()))
+n = int(len(lst)**.5)
+tab = [int(lst[y*5:y*5+5]) for y in range(n)]
+print(lst)
 
-# print(lines)
-# print(lines_vt)
-print(acc, bat)
+#  acc = 0
+# for y in range(n):
+# 	for x in range(n):
+# 		if x == y:
+# 			acc += tab[y][x]
+# print(acc)
+
+
+acc = 0
+for i in range(n):
+	acc += tab[i][i]
+print(acc)
+
+bat = 0
+y = n - 1
+x = 0
+for i in range(n):
+	bat += tab[y][x]
+	y -= 1
+	x += 1 
+print(bat)
+
 f1.close()  
