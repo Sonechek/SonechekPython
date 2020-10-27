@@ -1,9 +1,7 @@
 f1 = open('/home/sanek/Рабочий стол/input.txt', 'r')
 s  = f1.read()
-# line = text.split('\n')
-# lines = text.split()
-print(s)
 lst = list(map(int, s.split()))
+print (lst)
 n = int(len(lst)**.5)
 tab = [int(lst[y*5:y*5+5]) for y in range(n)]
 print(lst)
