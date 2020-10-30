@@ -7,3 +7,4 @@ tab = [lst[y*5:y*5+5] for y in range(n)]
 a = np.array([tab])
 a = a.transpose()
 print(a)
+f1.close
