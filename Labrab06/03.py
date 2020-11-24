@@ -1,0 +1,5 @@
+f1 = open('/home/sanek/Рабочий стол/input.txt')
+text = f1.read()
+a = list(text.split())
+print(a)
+f1.close()
