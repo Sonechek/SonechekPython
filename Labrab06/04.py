@@ -8,6 +8,4 @@ for i in range(len(n)):
         if summa_1 > summa_2:
             summa_2 = summa_1
         summa_1 = 0
-        
-        
 print(summa_2)
