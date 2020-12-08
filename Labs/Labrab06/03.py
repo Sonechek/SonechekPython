@@ -1,5 +1,5 @@
 def numerology(nothing):
-    list_guests = open('check.txt', 'r',encoding='UTF-8')
+    list_guests = open('input.txt', 'r',encoding='UTF-8')
     text = list_guests.read()
     lines = text.split('\n')
     for number_of_guest in range(1,len(lines)):
