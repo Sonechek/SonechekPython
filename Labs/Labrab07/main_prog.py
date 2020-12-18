@@ -1,4 +1,3 @@
 # import utils as u
-
-
-# u.teaparty()
+# u.crazy_teaparty(time)
+# print(time)
