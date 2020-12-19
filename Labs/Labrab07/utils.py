@@ -1,7 +1,7 @@
 import random
 
 
-def crazy_teaparty():
+def crazy_teaparty(st,n):
     count = 0
     chas = int(st[0:2])
     minutes = int(st[3:5])
@@ -29,8 +29,7 @@ def crazy_teaparty():
     if len(time) == 7:
         time = '0' + time
     print(time)
-# st = str(input())
-# n = int(input())
+
 
 
 def palindroms(palin):
@@ -69,13 +68,12 @@ def shagi():
     f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Labrab07/steps.txt', 'r')
     text = f1.read()
     lines = text.split('\n')
-    for i in range(len(lines)):
-        lev += text.split()[i:i+1]
-    print(lev)
-    f1.close()
+    # line1 = lines[0]
+    # a = int(line1[0])
+    # print(line1)u
 
     
-# crazy_teaparty()
+#crazy_teaparty(str(input()),int(input()))
 # palindroms(input())
 # cookie_ne_bydet()
-shagi()
+# shagi()
