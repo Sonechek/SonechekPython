@@ -1,5 +1,6 @@
 import random
 
+
 def crazy_teaparty():
     count = 0
     chas = int(st[0:2])
@@ -64,7 +65,17 @@ def cookie_ne_bydet():
             break
     
     
+def shagi():
+    f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Labrab07/steps.txt', 'r')
+    text = f1.read()
+    lines = text.split('\n')
+    for i in range(len(lines)):
+        lev += text.split()[i:i+1]
+    print(lev)
+    f1.close()
 
+    
 # crazy_teaparty()
 # palindroms(input())
-cookie_ne_bydet()
+# cookie_ne_bydet()
+shagi()
