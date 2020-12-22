@@ -31,7 +31,6 @@ def crazy_teaparty(st,n):
     print(time)
 
 
-
 def palindroms(palin):
     palin = palin.lower()
     palin = ''.join(c for c in palin if c not in ('!',',',':','.','\n','?',' '))
@@ -68,12 +67,14 @@ def shagi():
     f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Labrab07/steps.txt', 'r')
     text = f1.read()
     lines = text.split('\n')
-    # line1 = lines[0]
-    # a = int(line1[0])
-    # print(line1)u
-
+    # lines = list(map(int, ))
     
-#crazy_teaparty(str(input()),int(input()))
+    print(lines)
+
+    f1.close()
+    
+
+# crazy_teaparty(str(input()),int(input()))
 # palindroms(input())
 # cookie_ne_bydet()
 # shagi()

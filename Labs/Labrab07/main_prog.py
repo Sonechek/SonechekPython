@@ -1,3 +1,6 @@
-# import utils as u
-# u.crazy_teaparty(time)
-# print(time)
+import utils as u
+
+# u.crazy_teaparty(str(input()),int(input()))
+# palindroms(input())
+# cookie_ne_bydet()
+# shagi()
