@@ -66,15 +66,16 @@ def cookie_ne_bydet():
 def shagi():
     f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Labrab07/steps.txt', 'r')
     text = f1.read()
-    lines = text.split('\n')
-    # lines = list(map(int, ))
-    
-    print(lines)
-
+    lst = text.split('\n')
+    lst = text.split()
+    lst = list(map(int, lst))
+    n = len(lst)
+    print(lst)
+    print(n)
     f1.close()
     
 
 # crazy_teaparty(str(input()),int(input()))
 # palindroms(input())
 # cookie_ne_bydet()
-# shagi()
+shagi()
