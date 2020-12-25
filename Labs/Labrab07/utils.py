@@ -77,9 +77,3 @@ def shagi():
     else:
         print((right_range - left_range)//100)
     f1.close()
-    
-
-# crazy_teaparty(str(input()),int(input()))
-# palindroms(input())
-# cookie_ne_bydet()
-shagi()
