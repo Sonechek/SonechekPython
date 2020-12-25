@@ -66,12 +66,16 @@ def cookie_ne_bydet():
 def shagi():
     f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Labrab07/steps.txt', 'r')
     text = f1.read()
-    lst = text.split('\n')
-    lst = text.split()
-    lst = list(map(int, lst))
-    n = len(lst)
-    print(lst)
-    print(n)
+    lines = text.split('\n')
+    left_range = 0
+    right_range = 0
+    for line in lines:
+        left_range += int((line.split(' '))[0]) * int((line.split(' '))[2])
+        right_range += int((line.split(' '))[1]) * int((line.split(' '))[2])
+    if left_range > right_range:
+        print((left_range - right_range)//100)
+    else:
+        print((right_range - left_range)//100)
     f1.close()
     
 
