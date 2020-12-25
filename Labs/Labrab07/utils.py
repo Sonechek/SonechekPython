@@ -38,7 +38,6 @@ def palindroms(palin):
         print('Палиндромчик!')
     else:
         print('Не фартануло!')
-    # print(palin)
 
 
 def cookie_ne_bydet():
