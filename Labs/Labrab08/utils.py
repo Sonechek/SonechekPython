@@ -20,7 +20,23 @@ import re
 #     print(site)
 
 
-def binary_search():
-    f1 = open(words.txt, 'r')
+def binary_search(value):
+    f1 = open('words.txt', 'r')
+    text = []
     text = f1.read()
-    
+    first = 0
+    last = len(text) - 1
+    index = -1
+    while (first <= last) and (index == -1):
+        mid = (first + last) // 2
+        if text[mid] == value:
+            index = mid
+        else:
+            if value < text[mid]:
+                last = mid - 1
+            else:
+                first = mid + 1
+    return index
+    print(index)
+    f1.close()
+value = input()
