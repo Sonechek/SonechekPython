@@ -6,7 +6,7 @@ plt.style.use('ggplot')
 
 
 x = np.linspace(-5,5,100)
-y = 9.5*x**3 - 500
+y = 15*x**3 + 350
 
 
 fig, ax = plt.subplots()
