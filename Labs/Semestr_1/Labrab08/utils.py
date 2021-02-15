@@ -21,7 +21,7 @@ import re
 
 
 def binary_search(value):
-    f1 = open('words.txt', 'r')
+    f1 = open('words-utf8.txt', 'r')
     text = []
     text = f1.read()
     first = 0
@@ -37,6 +37,7 @@ def binary_search(value):
             else:
                 first = mid + 1
     return index
-    print(index)
     f1.close()
-value = input()
+
+
+print(binary_search(input()))
