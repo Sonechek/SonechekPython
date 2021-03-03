@@ -16,7 +16,7 @@ for id, item in enumerate(txt_lines):
     elif txt_lines[id] != '':
         txt_lines[id] = txt_lines[id] + '<br>'
     elif txt_lines[id] == '':
-        txt_lines[id] += '</p> + "\n" + <p>'
+        txt_lines[id] += '</p>  <p>'
 
     html_lines.insert(html_lines.index(''),txt_lines[id])
 
