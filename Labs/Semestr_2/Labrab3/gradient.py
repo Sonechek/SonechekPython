@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Semestr_2/Labrab3/1.jpg')
+img = Image.open('1.bmp')
 width, height = img.size
 
 kx = 256 / width 
@@ -12,5 +12,4 @@ for y in range(height):
         r, g, b = clr, clr, clr
         img.putpixel((x, y), (r, g, b))
 
-img.show()
 img.show()
