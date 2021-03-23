@@ -9,9 +9,12 @@ ky = 256 / height
 
 for y in range(height):
     for x in range(width):
-        clr = int((kx * y)/2)
+        r, g, b = img.getpixel((x,y))
+        if r == 12 and g == 12 and b == 12:
+
+            clr = int((kx * y)/2)
         
-        r, g, b = clr, clr, clr
-        img.putpixel((x, y), (r, g, b))
+            r, g, b = clr, clr, clr
+            img.putpixel((x, y), (r, g, b))
 
 img.show()
