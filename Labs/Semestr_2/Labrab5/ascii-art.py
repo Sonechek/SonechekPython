@@ -6,7 +6,7 @@ def get_image_resize(img, height_new):
     img_new = img.resize((width_new, height_new), Image.ANTIALIAS)
     return img_new
 
-name_image = 'ascii-art.jpg' 
+name_image = '/home/sonechek/Рабочий стол/SonechekPython/Labs/Semestr_2/Labrab5/ascii-art.jpg' 
 img = Image.open(name_image)
 img_new = get_image_resize(img, 100)
 
