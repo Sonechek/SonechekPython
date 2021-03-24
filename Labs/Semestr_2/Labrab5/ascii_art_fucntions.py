@@ -9,22 +9,15 @@ def get_image_resize(img, height_new):
     img_new = img.resize((width_new, height_new), Image.ANTIALIAS)
     return img_new
 
-symbols = ' &?!$*#░▒▓█'
-
-result = ''
-pic = []
 
 #getting pic symbols
 def get_image_symbols():
-    count = len(symbols)
-    full = 256 + 256 + 256
-    
-    segment = full // count
-    
     width, height = img_new.size
+    segment = 256 * 256 * 256 // len(symbols)
     for y in range(height):
         for x in range(width):
             r, g, b = img_new.getpixel((x, y))
+            color = r + g + b
             if switching_ch == 1:
                 color = r + g + b
             elif switching_ch == 2:
@@ -33,11 +26,12 @@ def get_image_symbols():
             result += symbols[pos] * 2
         result += '\n'
     pic.append(result)
+    return pic
 
 
 #inverting sides of pic
 def inverting_pic_sides():
-    with open('outpit-ascii.txt', mode='w', encoding='utf8') as out:
+    with open('outpit_ascii.txt', mode='w', encoding='utf8') as out:
         if inverting_ch == 1:
             for i in range(len(pic)):
                 out.write(pic[i])
@@ -50,9 +44,33 @@ def inverting_pic_sides():
             for i in range(len(pic)):
                 for k in range(len(pic)-1, 0, -1):
                     out.write(pic[i][k])
-    
+
         if inverting_ch == 4:
             for i in range(len(pic)-1, 0, 1):
                 for k in range(len(pic)-1, 0, -1):
                     out.write(pic[i][k])
+                    
+
+name_image = 'ascii_art.jpg'
+img = Image.open(name_image)
+img_new = get_image_resize(img, 50)
+
+symbols = ' &?#'
+
+result = ''
+
+pic = []
+print('Желаете отразить картинку?')
+while True:
+    inverting_ch = int(input('1 - НЕТ!!!!\n'
+                             '2 - Хочу вверх ногами!\n'
+                             '3 - Только отзеркалить\n'
+                             '4 - Я заказываю солянку\n'))
+    break
+print('Желаете инвертировать цвет?')
+while True:
+    switching_ch = int(input('1 - Хочу, хочу!!!\n'
+                             '2 - Нет, конечно же...\n'))
+    break
+print(pic)
 
