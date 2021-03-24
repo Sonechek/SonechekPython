@@ -11,7 +11,7 @@ name_image = '/home/sonechek/Рабочий стол/SonechekPython/Labs/Semestr
 img = Image.open(name_image)
 img_new = get_image_resize(img, 100)
 
-symbols = ' &?!$*#'
+symbols = ' &?!$*#░▒▓█'
 
 result = ''
 
@@ -45,6 +45,6 @@ def get_image_symbols():
     
 
 #writing result in file
-f1 = open('output-ascii.txt', 'w')
+f1 = open('/home/sonechek/Рабочий стол/SonechekPython/Labs/Semestr_2/Labrab5/output-ascii.txt', 'w')
 f1.write(result)
 f1.close()
