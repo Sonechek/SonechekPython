@@ -1,7 +1,6 @@
 from PIL import Image
 
 
-
 #switching size of pic
 def get_image_resize(img, height_new):
     width, height = img.size
