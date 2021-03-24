@@ -17,16 +17,15 @@ def get_image_symbols():
     for y in range(height):
         for x in range(width):
             r, g, b = img_new.getpixel((x, y))
-            color = r + g + b
             if switching_ch == 1:
-                color = r + g + b
+                color = abs(255 - r) * abs(255 - g) * abs(255 - b)
             elif switching_ch == 2:
                 color = r * g * b
             pos = color // segment
             result += symbols[pos] * 2
         result += '\n'
     pic.append(result)
-    return pic
+    
 
 
 #inverting sides of pic
@@ -49,7 +48,7 @@ def inverting_pic_sides():
             for i in range(len(pic)-1, 0, 1):
                 for k in range(len(pic)-1, 0, -1):
                     out.write(pic[i][k])
-                    
+
 
 name_image = 'ascii_art.jpg'
 img = Image.open(name_image)
