@@ -1,5 +1,6 @@
 from PIL import Image
 
+#switching size of pic
 def get_image_resize(img, height_new):
     width, height = img.size
     width_new = width // (height//height_new)
@@ -13,7 +14,9 @@ img_new = get_image_resize(img, 100)
 symbols = ' &?!$*#'
 
 result = ''
-def get_image_symbols(symbols):
+
+#getting pic symbols
+def get_image_symbols():
     count = len(symbols)
     full = 256 + 256 + 256
     segment = full // count
@@ -28,4 +31,20 @@ def get_image_symbols(symbols):
         result += '\n'
     return result
 
-print(result)
+
+#inverting sides of pic
+
+
+
+
+
+#switching color of pic
+
+
+
+    
+
+#writing result in file
+f1 = open('output-ascii.txt', 'w')
+f1.write(result)
+f1.close()
