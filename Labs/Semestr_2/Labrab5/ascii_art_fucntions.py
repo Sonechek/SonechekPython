@@ -16,7 +16,7 @@ def get_image_symbols():
     for y in range(height):
         for x in range(width):
             r, g, b = img_new.getpixel((x, y))
-            colot = r * g * b
+            color = r * g * b
             # if switching_ch == 1:
             #     color = abs(255 - r) * abs(255 - g) * abs(255 - b)
             # elif switching_ch == 2:
@@ -73,3 +73,4 @@ while True:
     break
 print(result)
 
+inverting_pic_sides(get_image_symbols())
