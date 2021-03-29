@@ -26,7 +26,7 @@ def get_image_symbols():
             result += symbols[pos] * 2
         result += '\n'
         pic.append(result)
-
+        return result
 
     
 
@@ -75,5 +75,5 @@ while True:
                              '2 - Нет, конечно же...\n'))
     break
 print(result)
-
-inverting_pic_sides(get_image_symbols())
+get_image_symbols(img)
+inverting_pic_sides(result)
