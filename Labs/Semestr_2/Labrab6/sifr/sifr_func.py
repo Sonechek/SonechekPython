@@ -15,6 +15,6 @@ rus_alph = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяА
 eng_alph = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 symb = ':; !?&-+=()*/.,'
 alph = rus_alph + eng_alph + symb
-key = 3
+key = 149995388
 
 code(alph, key)
