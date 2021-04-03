@@ -10,30 +10,30 @@ def get_image_resize(img, height_new):
 
 
 # getting pic symbols
-def get_image_symbols():
+def get_image_symbols(img_new):
     width, height = img_new.size
     segment = 256 * 256 * 256 // len(symbols)
     result = ''
     for y in range(height):
         for x in range(width):
             r, g, b = img_new.getpixel((x, y))
-            color = r * g * b
-            # if switching_ch == 1:
-            #     color = abs(255 - r) * abs(255 - g) * abs(255 - b)
-            # elif switching_ch == 2:
-            #     color = r * g * b
+            # color = r * g * b
+            if switching_ch == 1:
+                color = abs(255 - r) * abs(255 - g) * abs(255 - b)
+            elif switching_ch == 2:
+                color = r * g * b
             pos = color // segment
             result += symbols[pos] * 2
         result += '\n'
-        pic.append(result)
-        return result
+    pic.append(result)
+    return result
 
     
 
 
 # inverting sides of pic
-def inverting_pic_sides():
-    with open('output_ascii.txt', mode='w', encoding='utf8') as out:
+def inverting_pic_sides(result):
+    with open(f'output_ascii.txt', mode='w', encoding='utf8') as out:
         if inverting_ch == 1:
             for i in range(len(pic)):
                 out.write(pic[i])
@@ -53,15 +53,7 @@ def inverting_pic_sides():
                     out.write(pic[i][k])
 
 
-name_image = 'ascii_art.jpg'
-img = Image.open(name_image)
-img_new = get_image_resize(img, 50)
 
-symbols = ' &?#'
-result = ''
-
-
-pic = []
 print('Желаете отразить картинку?')
 while True:
     inverting_ch = int(input('1 - НЕТ!!!!\n'
@@ -74,6 +66,12 @@ while True:
     switching_ch = int(input('1 - Хочу, хочу!!!\n'
                              '2 - Нет, конечно же...\n'))
     break
-print(result)
-get_image_symbols(img)
+
+name_image = 'ascii_art.jpg'
+img = Image.open(name_image)
+img_new = get_image_resize(img, 50)
+pic = []
+symbols = '.:;+*123#░ &?#░▒▓█'
+result = get_image_symbols(img_new)
 inverting_pic_sides(result)
+
