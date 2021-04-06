@@ -7,17 +7,21 @@ def de_cifr(alph, img):
     shift = 0
     pos_b = ''
     for p in range(3):
-        (r, g, b) = rastr(x, y)
-        pos_b += str(r & 1); shift +=1
-        pos_b += str(g & 1); shift +=1
-        pos_b += str(b & 1); shift +=1
+        (r, g, b) = rastr[x, y]
+        pos_b += str(r & 1);
+        pos_b += str(g & 1);
+        pos_b += str(b & 1);
         x += 1
+    pos = pos_b[::-1]
+    print(pos)
     pos = int(pos_b[::-1], 2)
-
-
-
-
-    return text
+    smb = alph[pos]
+    if smb =='#':
+        print('\n')
+    elif smb == '@':
+        break
+    else:
+        print(smb, end='')
 
 
 alph = get_alph()
@@ -27,4 +31,3 @@ rastr = img.load()
 
 
 de_cifr()
-print(pos)
