@@ -12,7 +12,7 @@ def code(alph, key):
             w.write(line + '\n')
 
 
-def cifr_in_pic(alph, name_image, key, text):
+def cifr_in_pic(alph, name_image, text):
     img = Image.open(name_image)
     width, height = img.size
     rastr = img.load()
@@ -41,4 +41,4 @@ key = 149995388
 text = get_text('input.txt')
 name_image = 'draiv.jpg'
 code(alph, key)
-cifr_in_pic(alph, name_image, key, text)
+cifr_in_pic(alph, name_image, text)
