@@ -9,6 +9,10 @@ def code(alph, key):
             line = ''
             for j in range(len(tabs[i])):
                 line += alph[(alph.index(tabs[i][j]) + key) % len(alph)]
+            if i == len(tabs) - 1:
+                line = line + '^'
+            else:
+                line = line + '~'
             w.write(line + '\n')
 
 
@@ -39,6 +43,6 @@ def cifr_in_pic(alph, name_image, text):
 alph = get_alph()
 key = 149995388
 text = get_text('input.txt')
-name_image = 'draiv.jpg'
+name_image = 'bladerunner.bmp'
 code(alph, key)
 cifr_in_pic(alph, name_image, text)
