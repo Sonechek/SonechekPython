@@ -15,8 +15,10 @@ def de_cifr(image_name, alph):
             pos_b += str(g & 1)
             pos_b += str(b & 1)
             x += 1
-        # pos = pos_b[:-1]
-        pos = int(pos_b[::-1], 2)
+
+        pos = pos_b[0:-1]
+        pos = int(pos[::-1])
+
         simv = alph[pos]
         if simv == '~':
             stroka += '\n'
@@ -30,6 +32,6 @@ def de_cifr(image_name, alph):
 
 
 alph = get_alph()
-image_name = '1_bladerunner.bmp'
+image_name = '1_draiv.bmp'
 
 de_cifr(image_name, alph)
