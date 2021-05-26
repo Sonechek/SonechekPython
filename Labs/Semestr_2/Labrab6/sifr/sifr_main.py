@@ -1,19 +1,19 @@
 from PIL import Image
 from functions_for_sifr import get_alph, get_bit, get_text
 
-#
-# def code(alph, key):
-#     tabs = text
-#     with open(f'output.txt', mode='w', encoding='utf8') as w:
-#         for i in range(len(tabs)):
-#             line = ''
-#             for j in range(len(tabs[i])):
-#                 line += alph[(alph.index(tabs[i][j]) + key) % len(alph)]
-#             if i == len(tabs) - 1:
-#                 line = line + '^'
-#             else:
-#                 line = line + '~'
-#             w.write(line + '\n')
+
+def code(alph, key):
+    tabs = text
+    with open(f'output.txt', mode='w', encoding='utf8') as w:
+        for i in range(len(tabs)):
+            line = ''
+            for j in range(len(tabs[i])):
+                line += alph[(alph.index(tabs[i][j]) + key) % len(alph)]
+            if i == len(tabs) - 1:
+                line = line + '^'
+            else:
+                line = line + '~'
+            w.write(line + '\n')
 
 
 def cifr_in_pic(alph, name_image, text):
