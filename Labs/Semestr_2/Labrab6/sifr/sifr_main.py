@@ -44,5 +44,5 @@ alph = get_alph()
 key = 149995388
 text = get_text('input.txt')
 name_image = 'bladerunner.bmp'
-code(alph, key)
+# code(alph, key)
 cifr_in_pic(alph, name_image, text)

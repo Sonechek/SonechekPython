@@ -1,7 +1,7 @@
 def get_alph():
     rus_alph = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
     eng_alph = 'abcdefghijklmnopqrstuvwxyz'
-    symb = ':; !?&-+=()*/.,1234567890'
+    symb = ' :;!?&-+=()*/.,1234567890'
     alph = rus_alph + rus_alph.upper() + eng_alph + eng_alph.upper() + symb
     return alph
 
