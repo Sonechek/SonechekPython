@@ -1,0 +1,41 @@
+Index: Labs/Semestr_2/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.8\" project-jdk-type=\"Python SDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Labs/Semestr_2/.idea/misc.xml b/Labs/Semestr_2/.idea/misc.xml
+--- a/Labs/Semestr_2/.idea/misc.xml	(revision 2ef30f73604dc6cbaa3e7a1a7a3f90ef074fd2b8)
++++ b/Labs/Semestr_2/.idea/misc.xml	(date 1618602705810)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (inter)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: Labs/Semestr_2/.idea/Semestr_2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.8\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Labs/Semestr_2/.idea/Semestr_2.iml b/Labs/Semestr_2/.idea/Semestr_2.iml
+--- a/Labs/Semestr_2/.idea/Semestr_2.iml	(revision 2ef30f73604dc6cbaa3e7a1a7a3f90ef074fd2b8)
++++ b/Labs/Semestr_2/.idea/Semestr_2.iml	(date 1618602705798)
+@@ -4,7 +4,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.9 (inter)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+diff --git a/Labs/Semestr_2/Labrab6/sifr_in_pic/0_0.txt b/Labs/Semestr_2/Labrab6/sifr_in_pic/0_0.txt
+deleted file mode 100644
+diff --git a/Labs/Semestr_2/Labrab6/sifr_in_pic/kefir_in pic.py b/Labs/Semestr_2/Labrab6/sifr_in_pic/kefir_in pic.py
+deleted file mode 100644
